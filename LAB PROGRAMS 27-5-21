@@ -1,0 +1,134 @@
+#include<stdio.h>
+
+void main()
+{
+char ch;
+
+printf("\n Enter a charachter: ");
+scanf("%c",&ch);
+
+switch(ch)
+{
+case 'a':
+printf("\n ' %c ' is Vowel",ch);
+break;
+case 'A':
+printf("\n ' %c ' is Vowel",ch);
+break;
+case 'e':
+printf("\n ' %c ' is Vowel",ch);
+break;
+case 'E':
+printf("\n ' %c ' is Vowel",ch);
+break;
+case 'i':
+printf("\n ' %c ' is Vowel",ch);
+break;
+case 'I':
+printf("\n ' %c ' is Vowel",ch);
+break;
+case 'o':
+printf("\n ' %c ' is Vowel",ch);
+break;
+case 'O':
+printf("\n ' %c ' is Vowel",ch);
+break;
+case 'u':
+printf("\n ' %c ' is Vowel",ch);
+break;
+case 'U':
+printf("\n ' %c ' is Vowel",ch);
+break;
+default:
+printf("\n' %c ' is a Consonant",ch);
+break;
+
+}
+}
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+
+int minutes(int x,int y)
+{
+return (60*x)+y;
+}
+
+void main()
+{
+int x,y,result;
+
+printf("\n Enter the number of hours and minutes ");
+scanf("%d %d",&x,&y);
+result=minutes(x,y);
+printf("\n Total Number of Minutes: %d",result);
+}
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+
+void main()
+{
+int x;
+
+printf("\n Input month number ");
+scanf("%d",&x);
+
+switch(x)
+{
+case 1:
+printf("\n January");
+break;
+case 2:
+printf("\n February");
+break;
+case 3:
+printf("\n March");
+break;
+case 4:
+printf("\n April");
+break;
+case 5:
+printf("\n May");
+break;
+case 6:
+printf("\n June");
+break;
+case 7:
+printf("\n July");
+break;
+case 8:
+printf("\n August");
+break;
+case 9:
+printf("\n September");
+break;
+case 10:
+printf("\n October");
+break;
+case 11:
+printf("\n November");
+break;
+case 12:
+printf("\n December");
+break;
+default:
+printf("\n Invalid Input");
+break;
+}
+}
