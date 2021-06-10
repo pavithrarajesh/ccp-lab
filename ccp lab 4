@@ -1,0 +1,79 @@
+prog to swap the largest and samllest number
+
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+int a[50],largest,smallest,n,swapper,i;
+printf("Enter the number of elements in the array:\n");
+scanf("%d",&n);
+printf("Enter the elements of the array: \n");
+for(i=0;i<n;i++)
+{scanf("%d",&a[i]);}
+largest=0;
+smallest=0;
+for(i=1;i<n;i++)
+{if(a[i]>a[largest])
+{largest=i;}
+if(a[i]<a[smallest])
+{smallest=i;}
+}
+printf("\n Before interchange: \n Largest number = %d \n Smallest number = %d",a[largest],a[smallest]);
+swapper=a[largest];
+a[largest]=a[smallest];
+a[smallest]=swapper;
+printf("\n After interchange: \n Largest number = %d \n Smallest number = %d",a[largest],a[smallest]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+prog to find average of n numbers
+
+#include<stdio.h>
+void main()
+{int n,a[50],sum,i;
+float avg;
+sum=0;
+printf("Enter the number of numbers of which you want to find the average: \n");
+scanf("%d",&n);
+printf("Enter the numbers: \n");
+for(i=0;i<n;i++)
+{scanf("%d",&a[i]);
+}
+for(i=0;i<n;i++)
+{sum=sum+a[i];
+}
+avg=(float)sum/n;
+printf("The average = %f",avg);
+}
+
+
+
+
+prog to find the sum of squares of n odd numbers
+
+#include<stdio.h>
+void main()
+{
+int n,i,j,sum=0;
+printf("Enter the number of odd numbers you wish to print: \n ");
+scanf("%d",&n);
+for(i=1;i<=(n*2);i++)
+{
+if(i%2!=0)
+{
+sum=sum+(i*i);
+}
+}
+printf("The sum of squares of first %d odd numbers = %d",n,sum);
+}
